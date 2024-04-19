@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Knee</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='side.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='normalize.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+<nav class="navbar bg-blue">
+    <div class="container flex">
+        <a href="index.html" class="navbar-brand">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="site logo">
+        </a>
+    </div>
+</nav>
+<div id="carouselExample" class="carousel slide cr" data-bs-interval="false">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="container text-center">
+                <div class="row align-items-start">
+                    <h2>1. Scaption Strengthening</h2>
+                    <div class="col">
+                        <video src="{{ url_for('static', filename='videos/shoulder/1.mp4') }}" width="500px" height="400px" class="object-fit-cover" autoplay></video>
+                    </div>
+                    <div class="col">
+                        <ul>
+                            <li>1. Stand with weights in your hands, arms straight at your sides, thumbs up and your shoulders down and back.</li>
+                            <li>2. Raise your arms in a 45 degree angle up to parallel.</li>
+                            <li>3. Return to the starting position and repeat.</li>
+                        </ul>
+                        <a class="btn 1" href="#" role="button">Start</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="container text-center">
+                <div class="row align-items-start">
+                    <div class="col">
+                        <img src="" width="740" height="580" class="one">
+                    </div>
+                    <div class="col">
+                        <div class="dropdown">
+                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                See Trainer Video
+                            </a>
+                            <div class="collapse clp" id="collapseExample">
+                                <video src="{{ url_for('static', filename='videos/shoulder/1.mp4') }}" width="400px" height="300px" class="object-fit-cover" autoplay></video>
+                            </div>
+
+                        </div>
+                        <a class="btn 11" href="#" role="button">Next</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <div class="container text-center">
+                <div class="row align-items-start">
+                    <h2>2. Assisted Shoulder Flexion</h2>
+                    <div class="col">
+                        <video src="{{ url_for('static', filename='videos/shoulder/2.mp4') }}" width="500px" height="400px" class="object-fit-cover" autoplay></video>
+                    </div>
+                    <div class="col">
+                        <ul>
+                            <li>1. Clasp your hands in front of your body.</li>
+                            <li>2. Raise them over your head by letting your stronger side guide and assist your weaker side.</li>
+                        </ul>
+                        <a class="btn 2" href="#" role="button">Start</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <div class="container text-center">
+                <div class="row align-items-start">
+                    <div class="col">
+                        <img src="" width="740" height="580" class="two">
+                    </div>
+                    <div class="col">
+                        <div class="dropdown">
+                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                See Trainer Video
+                            </a>
+                            <div class="collapse clp" id="collapseExample1">
+                                <video src="{{ url_for('static', filename='videos/shoulder/2.mp4') }}" width="400px" height="300px" class="object-fit-cover" autoplay></video>
+                            </div>
+
+                        </div>
+                        <a class="btn 11" href="#" role="button">Next</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <div class="container text-center">
+                <div class="row align-items-start">
+                    <h2>3. Assisted Shoulder</h2>
+                    <div class="col">
+                        <video src="{{ url_for('static', filename='videos/shoulder/3.mp4') }}" width="500px" height="400px" class="object-fit-cover" autoplay></video>
+                    </div>
+                    <div class="col">
+                        <ul>
+                            <li>1. Stand in front of a wall and place the hand of the affected arm on the wall in front of you.</li>
+                            <li>2. With your fingers, climb up the wall as high as you can and come back to the starting position.</li>
+                            <li>3. Repeat.</li>
+                        </ul>
+                        <a class="btn 3" href="#" role="button">Start</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <div class="container text-center">
+                <div class="row align-items-start">
+                    <div class="col">
+                        <img src="" width="740" height="580" class="three">
+                    </div>
+                    <div class="col">
+                        <div class="dropdown">
+                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                See Trainer Video
+                            </a>
+                            <div class="collapse clp" id="collapseExample2">
+                                <video src="{{ url_for('static', filename='videos/shoulder/3.mp4') }}" width="400px" height="300px" class="object-fit-cover" autoplay></video>
+                            </div>
+
+                        </div>
+                        <a class="btn 11" href="" role="button">Next</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <div class="container text-center">
+                <div class="row align-items-start">
+                    <h2>4. Side Lying External Rotation</h2>
+                    <div class="col">
+                        <video src="{{ url_for('static', filename='videos/shoulder/4.mp4') }}" width="500px" height="400px" class="object-fit-cover" autoplay></video>
+                    </div>
+                    <div class="col">
+                        <ul>
+                            <li>1. Lie on your side with a weight in your top hand, elbow bent to 90 degrees.</li>
+                            <li>2. Place a rolled towel between your arm and your side.</li>
+                            <li>3. Rest your head on your free arm.</li>
+                            <li>4. Externally rotate the arm to lift the weight up.</li>
+                            <li>5. Keep your body still; do not turn the trunk to assist the movement.</li>
+                        </ul>
+                        <a class="btn 4" href="#" role="button">Start</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <div class="container text-center">
+                <div class="row align-items-start">
+                    <div class="col">
+                        <img src="" width="740" height="580" class="four">
+                    </div>
+                    <div class="col">
+                        <div class="dropdown">
+                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                See Trainer Video
+                            </a>
+                            <div class="collapse clp" id="collapseExample3">
+                                <video src="{{ url_for('static', filename='videos/shoulder/4.mp4') }}" width="400px" height="300px" class="object-fit-cover" autoplay></video>
+                            </div>
+
+                        </div>
+                        <a class="btn 11" href="" role="button">Next</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <div class="container text-center">
+                <div class="row align-items-start">
+                    <h2>5. AAROM External Rotation</h2>
+                    <div class="col">
+                        <video src="{{ url_for('static', filename='videos/shoulder/5.mp4') }}" width="500px" height="400px" class="object-fit-cover" autoplay></video>
+                    </div>
+                    <div class="col">
+                        <ul>
+                            <li>1. Stand up against a wall.</li>
+                            <li>2. Position your affected arm on the wall close to your body, elbow bent 90 degrees, palm up.</li>
+                            <li>3. Push the affected arm out to the side toward the wall as far as possible by pushing on the stick with the good hand.</li>
+                            <li>4. Maintain the position and slowly return to the middle.</li>
+                            <li>5. Repeat.</li>
+                        </ul>
+                        <a class="btn 5" href="#" role="button">Start</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <div class="container text-center">
+                <div class="row align-items-start">
+                    <div class="col">
+                        <img src="" width="740" height="580" class="five">
+                    </div>
+                    <div class="col">
+                        <div class="dropdown">
+                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                See Trainer Video
+                            </a>
+                            <div class="collapse clp" id="collapseExample4">
+                                <video src="{{ url_for('static', filename='videos/shoulder/5.mp4') }}" width="400px" height="300px" class="object-fit-cover" autoplay></video>
+                            </div>
+
+                        </div>
+                        <a class="btn 12" href="" role="button">Next</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $('.11').click(function(){
+      $('.one').attr('src', '');
+      $('.two').attr('src', '');
+      $('.three').attr('src', '');
+      $('.four').attr('src', '');
+      $('.five').attr('src', '');
+      $('#carouselExample').carousel('next');
+    });
+    $('.12').click(function(){
+      $('.five').attr('src', '');
+      $('.12').attr('href', '{{ url_for('insert') }}?data=shoulder');
+    });
+    function helper(cls, url){
+      $(cls).attr('src', url);
+      $('#carouselExample').carousel('next');
+    }
+
+    $('.1').click(function(){
+      helper('.one', '{{ url_for('video_feed') }}?data=shoulder1');
+    });
+    $('.2').click(function(){
+      helper('.two', '{{ url_for('video_feed') }}?data=shoulder2');
+    });
+    $('.3').click(function(){
+      helper('.three', '{{ url_for('video_feed') }}?data=shoulder3');
+    });
+    $('.4').click(function(){
+      helper('.four', '{{ url_for('video_feed') }}?data=shoulder4');
+    });
+    $('.5').click(function(){
+      helper('.five', '{{ url_for('video_feed') }}?data=shoulder5');
+    });
+  </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+
+
+<section class="footer ft">
+    <p class="copy-right">Copyright @2030 all right reserved by Webtechknowledge</p>
+</section>
+</html>
